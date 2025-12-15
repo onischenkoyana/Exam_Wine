@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine Class Predictor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Wine Class Predictor</h1>
+      <p class="subtitle">AI-powered classification based on chemical analysis</p>
+    </header>
+
+    <form id="wine-form">
+      <div id="features" class="grid-layout">
+        </div>
+      
+      <div class="actions">
+        <button type="submit" id="predict-btn" disabled>Loading Model...</button>
+      </div>
+    </form>
+
+    <div id="result" class="result-box hidden"></div>
+  </div>
+
+</body>
+</html>
